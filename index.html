@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Adebisi.</title>
+		<link rel="stylesheet" href="./styles.css">
+		<link rel="icon" type="image/x-icon" href="./img/bi-favicon.ico">
+		<script src="https://kit.fontawesome.com/82edb324d0.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<header id="header">
+			<div class="container">
+				<nav>
+					<img src="./img/Adebisi..png" class="logo" alt="logo">
+					<ul id="sidemenu">
+						<li><a href="#header">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contacts">Contacts</a></li>
+						<i class="fa-solid fa-x" onclick="closemenu()"></i>
+					</ul>
+					<i class="fa-solid fa-bars" onclick="openmenu ()"></i>
+				</nav>
+				<div class="header-text">
+					<p>Frontend Developer</p>
+					<h1>Hi, I'm <span>Adebisi</span> <br>Abdussamad Ayomide</h1>
+				</div>
+			</div>
+		</header>
+		<!-- About Me -->
+		<main class="hero-section">
+			<div id="about" class="container">
+				<div class="row">
+					<div class="about-col-1">
+						<img src="./img/user-img.png" alt="my-profile-img">
+					</div>
+					<div class="about-col-2">
+						<h2 class="sub-title">About Me</h2>
+						<p>Hey, I’m Adebisi Abdussamad — part frontend developer, part pixel perfectionist, full-time
+							code enthusiast.
+
+							By day, I study Statistics at FUT Minna. By night (and sometimes by caffeine), I craft
+							responsive websites with HTML, CSS, JavaScript, and a sprinkle of React magic. Whether it’s
+							a sleek landing page or a personal portfolio, I bring ideas to life—one clean line of code
+							at a time.
+
+							Catch me building the web, breaking bugs, and occasionally dancing when my code runs on the
+							first try.</p>
+						<div class="tab-titles">
+							<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+							<p class="tab-links" onclick="opentab('experience')">Experience</p>
+							<p class="tab-links" onclick="opentab('education')">Educations</p>
+						</div>
+						<div class="tab-contents active-tab" id="skills">
+							<ul>
+								<li><span>Frontend Development</span><br>Building Web/App interfaces</li>
+							</ul>
+							<ul>
+								<li><span>Website Optimazation</span><br>Performance and Accessibility Improvement</li>
+							</ul>
+							<ul>
+								<li><span>Project Management</span><br>Building and Maintaining muliple live Projects
+								</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="experience">
+							<ul>
+								<li><span>2022 - Current</span><br>Replicating Designs around the Web</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="education">
+							<ul>
+								<li><span>2023</span><br>Graphics Designing at TechyScholarNG
+								</li>
+							</ul>
+							<ul>
+								<li><span>2022</span><br>Responsive Web Design at FREECODECAMP</li>
+							</ul>
+							<ul>
+								<li><span>2021 - Till Date</span><br>Statistics from FUTMINNA.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ----------------------------------------- Services ----------------------------------------- -->
+			<div id="services">
+				<div class="container">
+					<h2 class="sub-title">My Services</h2>
+					<div class="services-list">
+						<div>
+							<i class="fa-solid fa-laptop-code"></i>
+							<h2>Responsive Website & Landing Page Development</h2>
+							<p>I build clean, modern, and fully responsive websites and landing pages using HTML, CSS,
+								JavaScript, and Tailwind CSS — optimized for performance, mobile-friendliness, and user
+								experience.</p>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design">Learn
+								more</a>
+						</div>
+						<div>
+							<i class="fa-solid fa-file-code"></i>
+							<h2>Code Optimization & Deployment</h2>
+							<p>I ensure your site runs efficiently by optimizing assets, maintaining clean code, and
+								deploying via Netlify with Git/GitHub for version control and smooth updates.</p>
+							<a
+								href="https://blog.kodezi.com/code-performance-optimization-techniques-for-efficient-execution-3/#:~:text=Code%20optimization%20is%20a%20crucial,structures%2C%20to%20enhance%20code%20performance.">Learn
+								more</a>
+						</div>
+						<div>
+							<i class="fa-solid fa-code-merge"></i>
+							<h2>Team Collaboration & Problem Solving</h2>
+							<p>I work well in collaborative environments, contribute ideas, and help solve frontend
+								challenges quickly and efficiently.</p>
+							<a href="https://thinkkids.org/collaborative-problem-solving-in-the-workplace/">Learn
+								more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ----------------------------------------- Portfolio ----------------------------------------- -->
+			<div id="portfolio">
+				<div class="container">
+					<h2 class="sub-title">My Work</h2>
+					<div class="work-list">
+						<div class="work">
+							<img src="./img/growth-hero.png" alt="growth-hero-section">
+							<div class="layer">
+								<h3>Growth Website</h3>
+								<p>The website promotes "Growth," a startup growth tool that helps users organize,
+									collaborate, and track progress, with a focus on speed and efficiency.
+								</p>
+								<a href="https://growth-landing-page-bi.netlify.app/"><i
+										class="fa-solid fa-link"></i></a>
+							</div>
+						</div>
+						<div class="work">
+							<img src="./img/recipe-hero.png" alt="recipe-hero-section">
+							<div class="layer">
+								<h3>Recipe Website</h3>
+								<p>This webpage provides a simple omelette recipe with preparation and cooking times,
+									ingredients, and a photo of the finished dish.
+								</p>
+								<a href="https://recipe-page-bi.netlify.app/"><i class="fa-solid fa-link"></i></a>
+							</div>
+						</div>
+						<div class="work">
+							<img src="./img/clipboard-hero.png" alt="clipboard-hero-section">
+							<div class="layer">
+								<h3>Clipboard Website</h3>
+								<p>The website promotes a clipboard management tool called "Clipboard" that allows users
+									to track and organize copied items across iOS and Mac devices.
+								</p>
+								<a href="https://clipboardlandingpage-by-adebisi.netlify.app/"><i
+										class="fa-solid fa-link"></i></a>
+							</div>
+						</div>
+						<div class="work">
+							<img src="./img/my-profile.png" alt="my-profile on frontendmentor">
+							<div class="layer">
+								<h3>My FrontEndMentor Projects</h3>
+								<p>This is my profile page on a FrontEndMentor showcasing my solutions and
+									contributions.
+								</p>
+								<a href="https://www.frontendmentor.io/profile/adebisiabdussamad"><i
+										class="fa-solid fa-link"></i></a>
+							</div>
+						</div>
+					</div>
+					<a href="https://www.frontendmentor.io/profile/adebisiabdussamad" class="btn">See more</a>
+				</div>
+			</div>
+			<!-- ----------------------------------------- Contact ----------------------------------------- -->
+			<div id="contacts" class="contact">
+				<div class="container">
+					<div class="row">
+						<div class="contact-left">
+							<h2 class="sub-title">Contact Me</h2>
+							<p class="fasxx"><i class="fa-solid fa-square-envelope"></i>
+								adebisiabdussamadayomide@gmail.com</p>
+							<p class="fasxx"><i class="fa-solid fa-square-phone"></i> 09133714401</p>
+							<div class="social-icons">
+								<a href="https://x.com/adebisicodes"><i class="fa-brands fa-square-x-twitter"></i></a>
+								<a href="https://www.instagram.com/adebisicodes/"><i
+										class="fa-brands fa-square-instagram"></i></a>
+								<a href="https://wa.link/a9ukxm"><i class="fa-brands fa-square-whatsapp"></i></a>
+							</div>
+							<a href="img/adebisi-resume.pdf" download class="btn btn-2">Download CV</a>
+						</div>
+						<div class="contact-right">
+							<form name="submit-to-google-sheet">
+								<input type="text" name="Name" placeholder="Your Name" required>
+								<input type="email" name="Email" placeholder="Your Email" required>
+								<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+								<button type="submit" class="btn btn-2">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="copyright">
+				<p>Copyright © Adebisi Abdussamad Ayomide 2025.</p>
+			</div>
+		</footer>
+		<script>
+			let tablinks = document.getElementsByClassName("tab-links")
+			let tabcontents = document.getElementsByClassName("tab-contents")
+
+			function opentab(tabname) {
+				for (tablink of tablinks)
+					tablink.classList.remove("active-link")
+
+				for (tabcontent of tabcontents)
+					tabcontent.classList.remove("active-tab")
+
+				event.currentTarget.classList.add("active-link")
+				document.getElementById(tabname).classList.add("active-tab")
+			}
+
+			// Menu
+
+			let sidemenu = document.getElementById("sidemenu")
+
+			function openmenu() {
+				sidemenu.style.right = "0"
+			}
+			function closemenu() {
+				sidemenu.style.right = "-200px"
+			}
+
+			// Form
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbyEojl1SULlj68YXvNxCAYw_IGALXrkkhyLOx_cm-P-5TyuIZ7TFjhno9tgP5EEh6zz/exec'
+			const form = document.forms['submit-to-google-sheet']
+
+			form.addEventListener('submit', e => {
+				e.preventDefault()
+				fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+					.then(response => console.log('Success!', response))
+					.catch(error => console.error('Error!', error.message))
+			})
+		</script>
+	</body>
+
+</html>
