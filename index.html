@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Adebisi.</title>
+		<title>Home - Adebisi A</title>
 		<link rel="stylesheet" href="./styles.css">
 		<link rel="icon" type="image/x-icon" href="./img/bi-favicon.ico">
 		<script src="https://kit.fontawesome.com/82edb324d0.js" crossorigin="anonymous"></script>
@@ -198,6 +198,7 @@
 								<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
 								<button type="submit" class="btn btn-2">Submit</button>
 							</form>
+							<span id="msg"></span>
 						</div>
 					</div>
 				</div>
@@ -237,11 +238,18 @@
 			// Form
 			const scriptURL = 'https://script.google.com/macros/s/AKfycbyEojl1SULlj68YXvNxCAYw_IGALXrkkhyLOx_cm-P-5TyuIZ7TFjhno9tgP5EEh6zz/exec'
 			const form = document.forms['submit-to-google-sheet']
+			const msg = document.getElementById('msg')
 
 			form.addEventListener('submit', e => {
 				e.preventDefault()
 				fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-					.then(response => console.log('Success!', response))
+					.then(response => {
+						msg.innerHTML = "Message sent successfully"
+						setTimeout(function () {
+							msg.innerHTML = ""
+						}, 5000)
+						form.reset( )
+					})
 					.catch(error => console.error('Error!', error.message))
 			})
 		</script>
