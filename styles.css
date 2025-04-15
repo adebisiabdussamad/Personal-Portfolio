@@ -112,6 +112,7 @@ nav ul li a:hover::after {
 .tab-titles {
 	display: flex;
 	margin: 20px 0 40px;
+	justify-content: space-around;
 }
 
 .tab-links {
@@ -426,7 +427,8 @@ form .btn-2 {
 		left: 25px;
 		cursor: pointer;
 	}
-	.layer{
+
+	.layer {
 		font-size: 10px;
 	}
 
